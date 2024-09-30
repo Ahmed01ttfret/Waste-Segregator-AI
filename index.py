@@ -3,7 +3,7 @@ installed_packages = pkg_resources.working_set
 installed = sorted(["%s==%s" % (i.key, i.version) for i in installed_packages])
 print(installed)
 
-
+import tensorflow as tf
 import io
 import streamlit as st
 from PIL import Image
