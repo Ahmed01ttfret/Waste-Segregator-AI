@@ -46,7 +46,7 @@ st.write("""
 
 def get_category(list):
     cat=['CLOTHES', 'ELECTRONIC','FOOD/ORGANIC','GLASS','METAL','PAPER','PLASTIC']
-    index=list.index(1)
+    index=list.index(max(list))
     return cat[index]
 
 def load_model_(image_):
