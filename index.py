@@ -89,7 +89,7 @@ if uploaded_file is not None:
     imgage_arr = image_arr / 255.0
 
     # Add batch dimension (to make it shape (1, 150, 150, 3))
-    img_tensor = tf.expand_dims(image_arr, axis=0)
+    img_tensor = tf.expand_dims(imgage_arr, axis=0)
 
     
     prediction = load_model_(img_tensor)
